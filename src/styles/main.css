@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Bjorn";
+    font-style: normal;
+    font-weight: normal;
+    src: local("Bjorn"), local("Bjorn"),
+      url("/fonts/BjornRegular.woff") format("woff"),
+      url("/fonts/BjornRegular.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "NexaBold";
+    font-style: normal;
+    font-weight: normal;
+    src: local("NexaBold"), local("NexaBold"),
+      url("/fonts/NexaBold.woff") format("woff"),
+      url("/fonts/NexaBold.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: "NexaLight";
+    font-style: normal;
+    font-weight: normal;
+    src: local("NexaLight"), local("NexaLight"),
+      url("/fonts/NexaLight.woff") format("woff"),
+      url("/fonts/NexaLight.woff2") format("woff2");
+  }
+  ion-icon {
+    color: white;
+  }
+}

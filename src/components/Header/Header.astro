@@ -1,0 +1,58 @@
+<header class="bg-gradient-to-r from-primaryDark to-primaryDarkThree w-full">
+  <nav class="md:flex md:justify-between md:items-center py-6 px-6 content-center relative">
+    <div class="flex justify-between items-center">
+      <span>
+        <img
+        class="w-3rem h-3rem"
+        src="/src/assets/logo-vp.png" 
+        alt="Vision Paralela logo"
+        />  
+      </span>
+
+      <span class="text-3xl cursor-pointer md:hidden block mx-2">
+        <ion-icon class="menu" name="menu-outline"></ion-icon>
+      </span>
+    </div>
+
+    
+    <ul class="flex flex-col md:flex-row items-center justify-center md:static absolute md:w-auto
+    w-full h-screen md:h-auto left-0 top-0 bg-gradient-to-r from-primaryDark to-primaryDarkThree md:bg-none
+    z-[-1] md:z-auto -translate-y-full  md:translate-y-0 md:transition-none md:gap-x-[32px]
+    gap-y-[48px] md:my-0 text-center" >
+      <li>
+        <a href="/" class="text-white md:text-xl hover:text-grayLight duration 500">Services</a>
+      </li>
+      <li>
+        <a href="/" class="text-white md:text-xl hover:text-grayLight duration 500">Products</a>
+      </li>
+      <li>
+        <a href="/" class="text-white md:text-xl hover:text-grayLight duration 500">Portfolio</a>
+      </li>
+      <li>
+        <a href="/" class="text-white md:text-xl hover:text-grayLight duration 500">About</a>
+      </li>
+      <li>
+        <a href="/" class="text-white md:text-xl hover:text-grayLight duration 500">Contact</a>
+      </li>
+    </ul>
+  </nav>
+  
+  <script>
+    const icon = document.querySelector('ion-icon.menu');
+    const list = document.querySelector('ul');
+
+    icon?.addEventListener('click', () => {
+      if(icon.getAttribute('name') == "menu-outline"){
+        icon.setAttribute("name", "close-outline");
+        list?.classList.add('translate-y-0', 'transition-[transform]', 'ease-in-out', 'duration-500');
+      } else if(icon.getAttribute('name') == "close-outline") {
+        icon.setAttribute("name", "menu-outline");
+        list?.classList.remove('translate-y-0', 'ease-in-out');
+        setTimeout(()=> {
+          list?.classList.remove('transition-[transform]', 'duration-500');
+        }, 500);
+      };
+    });
+  </script>
+
+</header>
