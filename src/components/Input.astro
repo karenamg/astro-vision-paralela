@@ -1,0 +1,13 @@
+---
+const { id, type, field , placeholder } = Astro.props;
+---
+<div class="flex flex-col w-[251px] text-black">
+  <label for={id} class="w-full text-base md:text-3xl font-[NexaBold]">
+    {field}
+  </label>
+  <input class="w-full font-[NexaLight] text-sm md:text-xl focus:outline-0"
+      placeholder={placeholder}
+      type={type}
+      id={id}/>
+  <div class="w-[251x] h-[3px] md:h-[5px] bg-secondary -skew-x-[30deg]"> </div>
+</div>
