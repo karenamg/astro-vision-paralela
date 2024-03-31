@@ -2,6 +2,6 @@
 const {color} = Astro.props; 
 ---
 <div class="flex gap-x-[7px] z-[-1]">
-  <div class=`w-[86px] h-[8px] bg-${color} -skew-x-[30deg]`> </div>
-  <div class=`w-[86px] h-[8px] bg-${color} -skew-x-[30deg]`> </div>
+  <div class:list={[`w-[86px] h-[8px] -skew-x-[30deg]`, `bg-${color}`]}> </div>
+  <div class:list={[`w-[86px] h-[8px] -skew-x-[30deg]`, `bg-${color}`]}> </div>
 </div>
