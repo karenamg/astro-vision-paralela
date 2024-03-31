@@ -5,7 +5,7 @@ import Input from '../components/Input.astro';
 <section class="pt-[88px] md:pb-72">
   <div class="hidden md:block">
     <img
-    class="w-screen"
+    class="w-screen max-h-[500px] object-fit"
     src="/src/assets/landing.png"
     alt="Banner Image">  
     
@@ -15,13 +15,18 @@ import Input from '../components/Input.astro';
   </div> 
 
   <div class="flex-col justify-center">
-    <h1 class="text-center pt-[72px] md:pt-16 text-3xl md:text-7xl leading-none">
-      tools and services <br> for your brand
-    </h1>
-    <p class="text-center px-3 pt-2.5 md:pt-16 sm:px-10 md:px-16 lg:px-48 xl:px-56 text-sm md:text-3xl font-[Roboto] uppercase tracking-[0.94px]">
-      Work with us to create awesome content to overcome the obstacles you face as a creative entrepreneur.
-    </p>
-    <div class="flex flex-col md:flex-row md:justify-center items-center relative z-[-5]">
+    <div class="flex justify-center">
+      <h1 class="text-center pt-[72px] md:pt-16 text-3xl md:text-7xl leading-none md:min-w-[762px]">
+        tools and services <br> for your brand
+      </h1>
+    </div>
+    <div class="flex justify-center">
+      <p class="text-center px-3 pt-2.5 max-w-[375px] md:pt-16 md:px-10 md:max-w-[1032px]  text-sm md:text-3xl font-[Roboto] uppercase tracking-[0.94px]">
+        Work with us to create awesome content to overcome the obstacles you face as a creative entrepreneur.
+      </p>
+    </div>
+    
+    <div class="flex flex-col md:flex-row md:justify-center items-center relative z-[-2]">
       <div class="absolute md:static mt-11 md:mt-[88px] md:px-9">
         <Input id="input-name" type="text" field="Name" placeholder="Your name"/>
       </div>
