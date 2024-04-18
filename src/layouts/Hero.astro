@@ -1,0 +1,60 @@
+---
+import Divider from '../components/Divider.astro';
+import Input from '../components/Input.astro';
+---
+<section class="pt-[88px]">
+  <div class="hidden md:block">
+    <img
+    class="w-screen max-h-[500px] object-fill"
+    src="/src/assets/banner-top.png"
+    alt="Banner Image">  
+    
+    <div class="flex justify-center pt-24">
+      <Divider color="primary"/>
+    </div>
+  </div> 
+
+  <div class="flex flex-col justify-center items-center pb-[85px] md:pb-[134px]">
+    <h1 class="text-center pt-[72px] md:pt-16 text-3xl md:text-7xl leading-none">
+      tools and services <br> for your brand
+    </h1>
+    <p class="text-center px-3 pt-2.5 md:pt-16 sm:px-10 md:px-16 lg:px-48 xl:px-56 text-sm md:text-3xl font-[Roboto] uppercase tracking-[0.94px]">
+      Work with us to create awesome content to overcome the obstacles you face as a creative entrepreneur.
+    </p>
+    <div class="md:flex">
+      <div class="mt-11 md:mt-[88px] md:px-9">
+        <Input id="input-name" type="text" field="Name" placeholder="Your name"/>
+      </div>
+      <div class="mt-[54px] md:mt-[88px] md:px-9">
+        <Input id="input-email" type="email" field="Email" placeholder="example@mail.com"/>
+      </div>
+    </div>
+    <button type="submit" class="mt-[61px] md:mt-[74px] text-2xl md:text-4xl text-white bg-secondary px-[48px] py-[18px] tracking-[2px]">
+      SUBSCRIBE
+    </button>
+  </div>
+
+  <div class="relative flex justify-center items-center w-full bg-black/90">
+    <img
+    class="block md:hidden w-screen max-h-[348px] max-w-[353px] object-contain"
+    src="/src/assets/fotographer-mobile.png"
+    alt="Fotographer"> 
+    <img
+    class="hidden md:block w-screen max-h-[500px] max-w-[1355px] object-contain"
+    src="/src/assets/fotographer.png"
+    alt="Fotographer"> 
+
+    <div class="absolute flex flex-col size-full bg-black/90 md:max-h-[500px] md:max-w-[1355px]
+    max-h-[348px] max-w-[353px]">
+      <h1 class="pl-[22px] pt-[90px] md:pl-[105px] md:pt-[96px] text-white text-3xl md:text-7xl tracking-[2px] leading-[28px] md:leading-[70px] ">
+        we make it <br><span class="text-primary">possible</span>
+      </h1>
+      <div class="flex size-full justify-center items-end">
+        <p class="pb-[45px] md:pb-[60px] text-white text-center font-[NexaBold] text-sm md:text-3xl">
+          Digital Agency
+        </p>
+      </div>
+    </div>
+  </div>  
+  
+</section>

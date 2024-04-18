@@ -1,5 +1,8 @@
 ---
-const {color} = Astro.props; 
+interface Props {
+	color: string;
+}
+const { color } = Astro.props; 
 ---
 <div class="flex gap-x-[7px] z-[-1]">
   <div class=`w-[86px] h-[8px] bg-${color} -skew-x-[30deg]`> </div>
