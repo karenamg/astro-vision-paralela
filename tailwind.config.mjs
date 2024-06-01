@@ -31,6 +31,7 @@ export default {
         blackTwo: "#0E0E0E",
         white: "#FFFFFF",
         text: "#28262C",
+        pink: "#CB4CBE",
       },
     },
   },
