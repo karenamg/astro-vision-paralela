@@ -17,7 +17,7 @@ export default {
         light: "#DBEEFF",
         primary: "#EB00D7",
         primaryDark: "#460040",
-        primaryDarkOne: "#460040",
+        primaryDarkOne: "#460140",
         primaryDarkTwo: "#33002F",
         primaryDarkThree: "#270025",
         secondary: "#00B8E7",

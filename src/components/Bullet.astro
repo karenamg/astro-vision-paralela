@@ -1,0 +1,12 @@
+---
+interface Props {
+	primaryColor: string;
+  secondaryColor: string;
+}
+
+const { primaryColor, secondaryColor } = Astro.props; 
+---
+<div class="relative z-[1] w-[10px] h-[33px]">
+  <div class=`absolute top-[4px] w-[6px] h-[27px] bg-${primaryColor} -skew-y-[150deg]`> </div>
+  <div class=`absolute left-[4px] w-[6px] h-[27px] bg-${secondaryColor} -skew-y-[150deg]`> </div>
+</div>

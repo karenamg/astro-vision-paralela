@@ -1,0 +1,11 @@
+---
+interface Props {
+	primaryColor: string;
+  secondaryColor: string;
+}
+
+const { primaryColor, secondaryColor } = Astro.props; 
+---
+<div class=`flex justify-center items-center z-[1] w-full h-[267px] bg-gradient-to-br from-${primaryColor} to-${secondaryColor}`>
+  <div class="px-[94px] py-[33px] w-[187px] h-[200px] bg-white"> </div>
+</div>

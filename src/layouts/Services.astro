@@ -1,0 +1,95 @@
+---
+import Divider from '../components/Divider.astro';
+import Bullet from '../components/Bullet.astro';
+import ImageService from '../components/ImageService.astro';
+---
+<section class="flex flex-col size-full bg-white mt-[75px] md:mt-[215px] md:mb-[165px]">
+  <div class="block md:hidden">
+    <h1 class="text-black text-center font-[Bjorn] text-3xl">Services</h1>
+    <div class="flex justify-center">
+      <Divider color="primary"/>
+    </div>
+
+    <div class="flex flex-col px-[29px]">
+      <div class="flex flex-row mt-[74px] gap-x-[10px]">
+        <Bullet primaryColor="primary" secondaryColor="primaryDarkOne"/>
+        <h2 class="font-[NexaBold] text-2xl">Personal Branding</h2>
+      </div>
+      
+      <p class="font-[Roboto] text-[14px] leading-[16px] mt-[4px] mb-[30px]">Our personal branding is oriented on creating brands far beyond the person, by giving attributes that are unique and easy to recognize.</p>
+    </div>
+
+    <ImageService primaryColor="primary" secondaryColor="primaryDarkOne"/>
+
+    <div class="flex flex-col px-[29px]">
+      <div class="flex flex-row mt-[60px] gap-x-[10px]">
+        <Bullet primaryColor="secondary" secondaryColor="secondaryDark"/>
+        <h2 class="font-[NexaBold] text-2xl">Content Creation</h2>
+      </div>
+      
+      <p class="font-[Roboto] text-[14px] leading-[16px] mt-[4px] mb-[30px]">We develop content that helps startups and innovation teams uncover and communicate their compelling value.</p>
+    </div>
+
+    <ImageService primaryColor="secondary" secondaryColor="secondaryDark"/>
+
+    <div class="flex flex-col px-[29px]">
+      <div class="flex flex-row mt-[60px] gap-x-[10px]">
+        <Bullet primaryColor="tertiary" secondaryColor="tertiaryDark"/>
+        <h2 class="font-[NexaBold] text-2xl">Audiovisual Production</h2>
+      </div>
+      
+      <p class="font-[Roboto] text-[14px] leading-[16px] mt-[4px] mb-[30px]">Audiovisual content as short films and advertising spots allow us to innovate and expand our services. We count with our own team of audiovisual experts.</p>
+    </div>
+
+    <ImageService primaryColor="tertiary" secondaryColor="tertiaryDark"/>
+  </div>
+
+  <div class="hidden md:block pl-[103px] pr-[66px]">
+    <div class="flex flex-col gap-y-[6px] ml-[47px]">
+      <h1 class="text-black font-[Bjorn] text-7xl">Services</h1>
+      <Divider color="primary"/>
+    </div>
+
+    <div class="flex flex-row items-center justify-between gap-x-[70px] mt-[18px]">
+      <div class="flex flex-col ml-[47px] gap-y-[13px] max-w-[569px]">
+        <h2 class="font-[NexaBold] text-[50px] leading-[70px]">Personal Branding</h2>
+        <p class="font-[NexaLight] text-[34px] leading-[35px]">Our personal branding is oriented on creating brands far beyond the person, by giving attributes that are unique and easy to recognize.</p>
+      </div>
+
+      <div class="relative w-[435px] h-[460px] mr-[145px]">
+        <div class="absolute left-[159px] bg-primary w-[209px] h-[424px]"></div>
+        <div class="absolute top-[36px] left-[226px] bg-primaryDarkOne w-[209px] h-[424px] shadow-2xl"></div>
+        <div class="absolute top-[69px] bg-white w-[331px] h-[355px] shadow-2xl"></div>
+      </div>
+    </div>
+
+    <div class="flex flex-row items-center justify-between mt-[114px]">
+      <div class="relative w-[514px] h-[446px]">
+        <div class="absolute top-[75px] bg-secondary w-[376px] h-[198px]"></div>
+        <div class="absolute left-[154px] bg-secondaryDark w-[360px] h-[328px]"></div>
+        <div class="absolute top-[91px] left-[132px] bg-white w-[331px] h-[355px] shadow-2xl"></div>
+      </div>
+
+
+      <div class="flex gap-y-[13px] justify-end">
+        <div class="flex flex-col">
+          <h2 class="font-[NexaBold] text-[50px] leading-[70px]">Content Creation</h2>
+          <p class="font-[NexaLight] text-[34px] leading-[35px] max-w-[569px]">We develop content that helps startups and innovation teams uncover and communicate their compelling value.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-row items-center justify-between gap-x-[70px] mt-[31px]">
+      <div class="flex flex-col gap-y-[13px]">
+        <h2 class="font-[NexaBold] text-[50px] leading-[70px]">Audiovisual Production</h2>
+        <p class="font-[NexaLight] text-[34px] leading-[35px] max-w-[569px]">Audiovisual content as short films and advertising spots allow us to innovate and expand our services. We count with our own team of audiovisual experts.</p>
+      </div>
+
+      <div class="relative w-[587px] h-[477px]">
+        <div class="absolute left-[181px] bg-tertiary w-[358px] h-[477px]"></div>
+        <div class="absolute left-[216px] top-[131px] bg-tertiaryDark w-[371px] h-[276px]"></div>
+        <div class="absolute top-[89px] bg-white w-[331px] h-[355px] shadow-2xl"></div>
+      </div>
+    </div>
+  </div>
+</section>
