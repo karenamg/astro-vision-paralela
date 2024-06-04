@@ -1,7 +1,6 @@
 ---
 import Divider from '../components/Divider.astro';
 import Bullet from '../components/Bullet.astro';
-import ImageService from '../components/ImageService.astro';
 ---
 <section class="flex flex-col size-full bg-white mt-[75px] md:mt-[215px] md:mb-[165px]">
   <div class="block md:hidden">
@@ -20,7 +19,11 @@ import ImageService from '../components/ImageService.astro';
     </div>
 
     <div class="flex justify-center items-center z-[1] w-full h-[267px] bg-gradient-to-br from-primary to-primaryDarkOne">
-      <div class="px-[94px] py-[33px] w-[187px] h-[200px] bg-white"> </div>
+      <img
+          class="object-contain mx-[94px] my-[33px] w-[187px] h-[200px]"
+          src="/services-1.png" 
+          alt="Personal branding"
+        /> 
     </div>
 
     <div class="flex flex-col px-[29px]">
@@ -33,7 +36,11 @@ import ImageService from '../components/ImageService.astro';
     </div>
 
     <div class="flex justify-center items-center z-[1] w-full h-[267px] bg-gradient-to-br from-secondary to-secondaryDark">
-      <div class="px-[94px] py-[33px] w-[187px] h-[200px] bg-white"> </div>
+      <img
+          class="object-contain mx-[94px] my-[33px] w-[187px] h-[200px]"
+          src="/services-2.png" 
+          alt="Content creation"
+        /> 
     </div>
 
     <div class="flex flex-col px-[29px]">
@@ -46,7 +53,11 @@ import ImageService from '../components/ImageService.astro';
     </div>
 
     <div class="flex justify-center items-center z-[1] w-full h-[267px] bg-gradient-to-br from-tertiary to-tertiaryDark">
-      <div class="px-[94px] py-[33px] w-[187px] h-[200px] bg-white"> </div>
+      <img
+          class="object-contain mx-[94px] my-[33px] w-[187px] h-[200px]"
+          src="/services-3.png" 
+          alt="Audiovisual production"
+        /> 
     </div>
   </div>
 
@@ -65,7 +76,13 @@ import ImageService from '../components/ImageService.astro';
       <div class="relative w-[435px] h-[460px] mr-[145px]">
         <div class="absolute left-[159px] bg-primary w-[209px] h-[424px]"></div>
         <div class="absolute top-[36px] left-[226px] bg-primaryDarkOne w-[209px] h-[424px] shadow-2xl"></div>
-        <div class="absolute top-[69px] bg-white w-[331px] h-[355px] shadow-2xl"></div>
+        <div class="absolute top-[69px] bg-white w-[331px] h-[355px] shadow-2xl">
+          <img
+          class="size-full"
+          src="/services-1.png" 
+          alt="Content creation"
+        /> 
+        </div>
       </div>
     </div>
 
@@ -73,7 +90,13 @@ import ImageService from '../components/ImageService.astro';
       <div class="relative w-[514px] h-[446px]">
         <div class="absolute top-[75px] bg-secondary w-[376px] h-[198px]"></div>
         <div class="absolute left-[154px] bg-secondaryDark w-[360px] h-[328px]"></div>
-        <div class="absolute top-[91px] left-[132px] bg-white w-[331px] h-[355px] shadow-2xl"></div>
+        <div class="absolute top-[91px] left-[132px] bg-white w-[331px] h-[355px] shadow-2xl">
+          <img
+          class="size-full"
+          src="/services-2.png" 
+          alt="Content creation"
+        /> 
+        </div>
       </div>
 
 
@@ -94,7 +117,13 @@ import ImageService from '../components/ImageService.astro';
       <div class="relative w-[587px] h-[477px]">
         <div class="absolute left-[181px] bg-tertiary w-[358px] h-[477px]"></div>
         <div class="absolute left-[216px] top-[131px] bg-tertiaryDark w-[371px] h-[276px]"></div>
-        <div class="absolute top-[89px] bg-white w-[331px] h-[355px] shadow-2xl"></div>
+        <div class="absolute top-[89px] bg-white w-[331px] h-[355px] shadow-2xl">
+          <img
+          class="size-full"
+          src="/services-3.png" 
+          alt="Content creation"
+        /> 
+        </div>
       </div>
     </div>
   </div>
